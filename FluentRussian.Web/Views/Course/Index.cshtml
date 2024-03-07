@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h1>Course for @ViewBag.LanguageLevel level</h1>
+
+@if (ViewBag.LanguageLevel == "A1")
+{
+    @await Html.PartialAsync("_A1Content")
+}
+else if (ViewBag.LanguageLevel == "A2")
+{
+    @await Html.PartialAsync("_A2Content")
+}
+else if (ViewBag.LanguageLevel == "B1")
+{
+    @await Html.PartialAsync("_B1Content")
+}
+else if (ViewBag.LanguageLevel == "B2")
+{
+    @await Html.PartialAsync("_B2Content")
+}
+
+<form method="post" asp-controller="Test" asp-action="CourseTest">
+    <input type="hidden" name="languageLevel" value="@ViewBag.LanguageLevel" />
+    <div>
+        <button type="submit" class="w-25 btn btn-lg btn-primary">Take course quiz</button>
+    </div>
+</form>

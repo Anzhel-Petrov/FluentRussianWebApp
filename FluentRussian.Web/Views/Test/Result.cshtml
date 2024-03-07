@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h1>Резултат</h1>
+
+<h2>Резултат: @ViewBag.Score правилни въпроса от @ViewBag.QuestionsCount въпроса</h2>
+<h2>Вашето ниво е: @ViewBag.LanguageLevel</h2>
+
+<a asp-action="index" asp-controller="home">Към урока за @ViewBag.LanguageLevel ниво</a>

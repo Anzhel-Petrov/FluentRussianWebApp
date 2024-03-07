@@ -1,0 +1,93 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.basico-raiz {
+    color: #2e86cc;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.leccion-curso-marco {
+    -webkit-box-shadow: 2px 5px 15px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 5px 15px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 5px 15px 1px rgba(0, 0, 0, 0.25);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 1em 0.5em 2em 1em;
+    margin: 1.5em 0em 1.5em -0.5em;
+}
+
+/* ----------------------- COLECCION LECCION CASOS RUSOS --------------------- */
+
+.leccion-casos-ayuda-extra a.btn {
+    font-size: 90%;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.leccion-casos-cuadro-gramatica {
+    margin: 0.5em;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.leccion-casos-cuadro-gramatica li {
+    padding-bottom: 0.5em;
+}
+
+.leccion-casos-masculino {
+    background-color: #cce5ff;
+}
+
+.leccion-casos-femenino {
+    background-color: #f0dbe9;
+}
+
+.leccion-casos-neutro {
+    background-color: #ddffcc;
+}
+
+.leccion-casos-traduccion-gramatica {
+    color: #333;
+    font-style: italic;
+}
+
+.leccion-casos-ayuda-extra {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid #eeebbb;
+    background: #fffddd;
+    text-align: center;
+}
+
+.leccion-casos-ayuda-extra a {
+    margin-left: -2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
